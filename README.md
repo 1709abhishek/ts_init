@@ -68,9 +68,6 @@ The build files will be created in the `dist` directory.
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
 - **Testing**: Jest + React Testing Library
-- **UI Components**:
-  - Radix UI
-  - Lucide React (icons)
 - **Animations**: React Confetti
 
 ## 🧪 Testing
