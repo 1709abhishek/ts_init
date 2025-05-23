@@ -66,7 +66,7 @@ function SudokuRow({
     }
   };
   return (
-    <div className="board-row">
+    <div className="board-row" role="row">
       {row.map((cell, colIndex) => (
         <SudokuCell
           key={colIndex}

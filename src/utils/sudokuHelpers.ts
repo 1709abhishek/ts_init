@@ -1,15 +1,12 @@
 import type { Cell } from '../contexts/SudokuContext';
 
 export function checkMove(board: Cell[][], row: number, col: number, value: number): boolean {
-  // Check row
   for (let i = 0; i < 4; i++) {
     if (i !== col && board[row][i].value === value) return false;
   }
-  // Check column
   for (let i = 0; i < 4; i++) {
     if (i !== row && board[i][col].value === value) return false;
   }
-  // Check 2x2 box
   const boxRow = Math.floor(row / 2) * 2;
   const boxCol = Math.floor(col / 2) * 2;
   for (let i = 0; i < 2; i++) {
