@@ -5,10 +5,9 @@ A modern, interactive 4x4 Sudoku game built with React, TypeScript, and Vite. Th
 ## 🎮 Features
 
 - **4x4 Sudoku Grid**: A compact and challenging variant of the classic Sudoku game
-- **Real-time Scoring**: Earn points for correct moves and lose points for incorrect ones
+- **Real-time Scoring**: Earn points for correct moves
 - **Timer**: Track your solving time
 - **Responsive Design**: Play on any device with a beautiful, adaptive interface
-- **Visual Feedback**: Clear indicators for correct and incorrect moves
 - **Game Controls**: Solve and restart the game.
 
 ## 🎯 Game Rules
@@ -18,8 +17,6 @@ A modern, interactive 4x4 Sudoku game built with React, TypeScript, and Vite. Th
 3. Each column must contain numbers 1-4 without repetition
 4. Each 2x2 box must contain numbers 1-4 without repetition
 5. Earn points for correct moves
-6. Lose points for incorrect moves
-7. Use hints wisely - they're limited!
 
 ## 🚀 Getting Started
 

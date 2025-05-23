@@ -5,17 +5,14 @@ describe('Puzzles Utility', () => {
     it('should have valid puzzle and solution pairs', () => {
       samples.forEach((sample) => {
         expect(sample.puzzle.length).toBe(sample.solution.length);
-        sample.puzzle.forEach((row, i) => {
-          expect(row.length).toBe(sample.solution[i].length);
+        sample.puzzle.forEach((row, rowIndex) => {
+          expect(row.length).toBe(sample.solution[rowIndex].length);
         });
         
+        // Check that each row in solution contains unique numbers
         sample.solution.forEach(row => {
           expect(new Set(row).size).toBe(row.length);
         });
-        sample.solution.forEach((row, i) => {
-          expect(new Set(row).size).toBe(row.length);
-        });
-        
       });
     });
   });
